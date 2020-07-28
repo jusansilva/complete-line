@@ -1,10 +1,11 @@
 exports.complete = (start, char, line) => {
     try {
-        for (var i = 0; i < line.length; i++) {
+        var str ='';
+        for (var i = 0; i < str.length; i++) {
             if (line.length > 54) {
-                return line;
+                return str;
             } else {
-                line = line.splice(line.indexOf(start), 0, char);
+                str.concat(line.slice(0, line.indexOf(start)),char, line.slice(line.indexOf(start), line.length));
             }
         }
     } catch (error) {

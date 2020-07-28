@@ -1,6 +1,6 @@
 {
   "name": "complete-line",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "lib to complete line with character.",
   "main": "index.js",
   "scripts": {
