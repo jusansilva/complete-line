@@ -1,8 +1,9 @@
-exports.complete = function(start, char, str, strLength) {
+exports.complete = (start, char, str, strLength) => {
     try {
         var NewStr ='';
+        if(str.indexOf(start) == -1) new Error('start not found')
         for (var i = 0; i < strLength; i++) {
-            if (str.length > 54) {
+            if (str.length > strLength) {
                 return str;
             } else {
                 str = NewStr.concat(str.slice(0, str.indexOf(start) + start.length),char, str.slice(str.indexOf(start) + start.length, str.length));
