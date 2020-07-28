@@ -1,7 +1,7 @@
 exports.complete = (start, char, str, strLength) => {
     try {
         var NewStr ='';
-        if(str.indexOf(start) == -1) new Error('start not found')
+        if(str.indexOf(start) == -1) return new Error('start not found');
         for (var i = 0; i < strLength; i++) {
             if (str.length > strLength) {
                 return str;
