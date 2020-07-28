@@ -1,0 +1,19 @@
+{
+  "name": "complete-line",
+  "version": "1.0.0",
+  "description": "lib to complete line with character.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jusansilva/complete-line.git"
+  },
+  "author": "San Magno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jusansilva/complete-line/issues"
+  },
+  "homepage": "https://github.com/jusansilva/complete-line#readme"
+}
