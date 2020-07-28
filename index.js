@@ -1,7 +1,7 @@
 exports.complete = (start, char, line) => {
     try {
-        for (i = 0; i == line.length; i++) {
-            if (/[\n|\n\r]/.test(line)) {
+        for (var i = 0; i < line.length; i++) {
+            if (line.length > 54) {
                 return line;
             } else {
                 line = line.splice(line.indexOf(start), 0, char);
